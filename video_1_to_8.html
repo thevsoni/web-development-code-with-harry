@@ -149,6 +149,96 @@
         </tbody>
     </table>
 
+
+    <!--forms and input-->
+
+    <form action="backend.php">
+        Name : <input type="text">
+        role : <input type="text">
+    </form>
+    <!--but above will be in same line-->
+    <!-- bcs input is a inline element so here we can use <br> tag -->
+
+    <form action="backend.php">
+        Name : <input type="text">
+        <br>
+        role : <input type="text">
+    </form>
+    <!-- but <br> is recommendate for forms we can use simply use <div></div> . div is a block element -->
+
+    <form action="backend.php">
+        <div>
+            Name : <input type="text">
+        </div>
+        <br> <!--but not recommendated bcs will do this using css-->
+        <div>
+            role : <input type="text">
+        </div>
+    </form>
+
+    <form action="backend.php">
+
+        <label for="name">Name</label> <!--using this , we can set lable in any section but we have to set id whose id should same as here is for=""-->
+        <div>
+             : <input type="text" name="myName" id="name">
+        </div>
+
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div>
+        
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        
+        <div>
+            Bonus : <input type="number" name="myBonus">
+        </div>
+        
+        <div>
+            Are u eligible : <input type="checkbox" name="myEligibility">
+        </div>
+        
+        <div>
+            Are u eligible2 : <input type="checkbox" name="myEligibility" id="name" checked>
+        </div>
+
+        <br>
+        <label for="hey">Are u eligible3_Using_Lable :</label>
+        <div>
+             <input type="checkbox" name="myEligibility" id="hey" >
+        </div>
+        
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div> <!--here i am able to click  only in one radio bcs i have given same name-->
+
+        <div>
+            write about yourself : <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <input type="submit" value="submit bro">
+            <input type="reset" value="Reset Now">
+        </div>
+        
+
+        <!-- <label for="car">Car</label> -->
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>swift</option>
+            </select>
+        </div>
+        
+    </form>
+    
+    <form action="backend.php">
+        
+    </form>
+    
 </body>
 
 </html>
