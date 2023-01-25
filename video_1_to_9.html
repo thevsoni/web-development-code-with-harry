@@ -228,16 +228,31 @@
         <div>
             <label for="car">Car</label>
             <select name="myCar" id="car">
-                <option value="ind">Indica</option>
-                <option value="swf" selected>swift</option>
+                <option value="">Indica</option>
+                <option value="" selected>swift</option>
             </select>
         </div>
         
     </form>
     
-    <form action="backend.php">
-        
-    </form>
+    <!--inline and block elements-->
+
+    <p>this is a paragraph</p>
+    <p>this is a paragraph</p>
+    
+    <p>this is a paragraph</p> <p>this is a paragraph</p> <!--yet it will come next line bcs this is block elements-->
+
+    <span>this is spam</span> <span>this is spam</span> <!--this will come in same line bcs this is inline elements-->
+
+    <span>this is spam</span>
+    <span>this is spam</span> <!--this wil  come again in same line since i have written in next line bcs this is inline elements-->
+
+    <!--for understanding we can use css border but inline css is not recommendate -->
+    <p style="border: 2px solid red;">i am paragraph</p> <p style="border: 2px solid blue;">i am also paragraph</p>
+
+    <span style="border: 2px solid red;">i am span</span> 
+    <span style="border: 2px solid blue;">i am also span</span>
+    
     
 </body>
 
