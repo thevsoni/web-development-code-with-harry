@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #pexcep{
+            color: black;
+        }
+        /* this is id selectors*/
+
+        .clas{
+            background-color: aqua;
+            color: violet;
+        }
+        /* this is class selectors*/
+
+        p{
+            color: red;
+        }
+        /*this is element selectors */
+
+        h1,h2,span,footer{
+            color: slategrey;
+            background-color: brown;
+            
+        }
+        /*this is grouping selectors*/
+
+        p{
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>css selectors</h3>
+    <p>i am inside para 1</p>
+    <p id="pexcep" class="clas">i am inside para 2</p>
+
+    <div>
+        <p class="clas">i am inside div inside </p>
+    </div>
+
+    <p id="pexcep">i am overriding css property here bcs i am giving this id and in style after p properties i am implementing this id property 
+        so it will work but it does not matter bcs this id works as inline css 
+        and also in id and in class if somethings is overlapping then id takes priorities
+    </p>
+
+    <h1> i am in h1</h1>
+    <h2> i am in h2</h2>
+
+    <span>vishal soni is playing cricket and in span</span>
+    <footer>
+        i am a footer.
+    </footer>
+</body>
+</html>
