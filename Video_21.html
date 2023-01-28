@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Alignment : Float And Clear</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"> -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Source Serif Pro', serif;
+        }
+        .container{
+            border: 2px solid black;
+            margin: auto; /*if we do this then it takes equal distance from left and right side and come to the center*/
+            width: 900px;
+            margin: 30px auto;
+            background-color: rgb(226, 162, 71);
+        }
+        .item{
+            border: 3px solid rgb(21, 2, 37);
+            background-color: rgb(119, 210, 70);
+            padding: 10px;
+            margin: 10px;
+
+        }
+        .para{
+
+        }
+        #fruits{
+            float: left; /*using this we can left shift our elements of parents box ,but for this we have to give width also*/
+            width: 47%;
+        }
+        #computer{
+            float: right;
+           width: 47%;
+        }
+        #stationary{
+            clear: left;  /*it clears float:left means if stationary overlap any element whose float is left then it will not overlap*/
+            clear: right; /*same for side*/
+            clear: both;  /*it covers both things*/
+        }
+        #food{
+            /* clear: both; */
+        }
+        p,h3{
+            text-align: center;
+            text-align: end;
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To My Store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitsPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex, veniam, in, sint nulla aliquid quisquam minus temporibus odio officiis voluptatum beatae sapiente mollitia architecto earum! Autem sint molestias itaque.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex, veniam, in, sint nulla aliquid quisquam minus temporibus odio officiis voluptatum beatae sapiente mollitia architecto earum! Autem sint molestias itaque.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationaryPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex, veniam, in, sint nulla aliquid quisquam minus temporibus odio officiis voluptatum beatae sapiente mollitia architecto earum! Autem sint molestias itaque.</p>
+        </div>
+        <div id="food" class="item">
+            <h3>food</h3>
+            <p id="foodPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex, veniam, in, sint nulla aliquid quisquam minus temporibus odio officiis voluptatum beatae sapiente mollitia architecto earum! Autem sint molestias itaque.</p>
+        </div>
+    </div>
+</body>
+</html>
