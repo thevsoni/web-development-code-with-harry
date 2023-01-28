@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #77db77;
+        }
+
+        .container{
+            background-color: rgb(242 119 242);;
+            border: 2px solid #295429;
+            /*since padding comes between border and element so if set any value for padding then there will be get space according to value between border and element*/
+            padding: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            /* we can set all padding together also */
+            padding: 20px 10px 20px 5px; /* top right bottom left*/
+
+            /*if we want that my y(top and bottom) value will be same and x(right and left) will be same then*/
+            padding: 25px 50px;
+
+            margin: 10px;
+
+            padding: 50px 50px;
+            margin: 20px 19px;
+
+            border-radius: 10px;
+
+            width: 500px;
+            /*this width changes depends on padding and margin values bcs elements height and width set based on its padding and margin*/
+
+            /*we cant const to height bcs depends on elements contents it can increase but we can set const to its width*/
+            box-sizing: border-box;
+
+        }
+        #third{
+            color: rgb(19, 82, 166);
+            border: 2px solid red;
+            padding: 10px 5px;
+            margin-right: 50px;
+        }
+        #tempDiv{
+            background-color: rgb(169, 25, 25);
+            padding-left: 20px;
+            padding-top: 15px;
+            height: 50px;
+            margin: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is container</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic optio incidunt quis veniam reprehenderit beatae error excepturi architecto aut eos, nam accusantium animi!</p>
+    </div>
+<body>
+    <div class="container">
+        <h3>this is container</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic optio incidunt quis veniam reprehenderit beatae error excepturi architecto aut eos, nam accusantium animi!</p>
+    </div>
+<body>
+    <div class="container">
+        <h3>this is container</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic optio incidunt quis veniam reprehenderit beatae error excepturi architecto aut eos, nam accusantium animi!</p>
+    </div>
+    <div id="tempDiv">
+        vishal soni is testing div int this section
+    </div>
+</body>
+</html>
