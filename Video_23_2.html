@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Navigation</title>
+    <style>
+        body{
+            background-color: rgb(132, 90, 209);
+        }
+        .navBar{
+            background-color: black;
+            border-radius: 15px;
+        }
+        .navBar li{ /*using this , all list which comes under navbar class will shift left based on conditions*/
+            float: left;
+            list-style: none; /*to avoid bullets which present bcs of list*/
+            
+            /*but now background color is not showing bcs when we do float to anything then it overflow its parent*/
+            /*inside its parent*/
+
+            margin: 13px 20px;
+        }
+        .navBar ul{
+            overflow: auto;
+        }
+        .navBar li a{
+            text-decoration: none;
+            padding: 5px;
+            color: wheat;
+        }
+        .navBar li:hover{
+            background-color: aqua;
+            color: blue;
+            padding: 5px;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+        .search{
+            float: right;
+            border: 2px solid rgb(226, 206, 206);
+            margin: 10px 30px 10px 0px;
+            padding: 1px;
+            width: 500px;
+            background-color: white;
+        }
+        .navBar input{
+            width: 490px;
+            border: 1px solid black;
+            border-radius: 3px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

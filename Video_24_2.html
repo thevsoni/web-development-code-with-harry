@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+
+            border: 2px solid red;
+            margin: auto; 
+            /* but still my header is not coming in the center*/
+            /*to resolve this , we have to set width*/    
+            width: 80%;
+        }
+        img{
+            width: 500px;
+            margin: auto;
+            display: block;
+            border: 2px black solid;
+        }
+        h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            margin: 0px;
+            
+        }
+        h1,h3{
+            text-align: center;
+        }
+        
+        /* span{
+            margin: 50px;
+        } */
+        /* h1{
+            margin: auto;
+        }
+        div{
+            margin: auto;
+        } */
+        div{
+            border: 2px solid red;
+        }
+        div span{
+            /* margin: auto; */
+            /*since span is a inline element so if i do margin auto still it will not work*/
+            /*for this i have to block its display then am able to do*/
+            /*but here i have to use text align */
+
+            /* display: block; */
+            /* text-align: center; */
+            border: 2px green solid;
+            width: 1000px; /*it doesnt effect bcs span is inline */
+            margin: auto;
+
+            /* display: block; */
+        }
+        p{
+            margin: auto;
+            border: 2px solid green;
+            width: 20%;
+        }
+        span{
+            display: block; /*if i do inline block then it will not come in the center*/
+            border: 2px solid black;
+            /* text-align: center; */
+            /* margin: auto; */ /*it doesnt work here*/
+            margin: auto;
+            width: 30%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="heade">
+        <h1>Welcome to CodersClub</h1>
+        <br>
+        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Error in Loading">
+        <h3>this is image</h3>
+    </header>
+    <div>
+        <!-- this is a image -->
+        <span>
+            <p>this is a image</p> 
+        </span>
+    </div>
+    <span>
+        this is a image
+    </span>
+</body>
+</html>

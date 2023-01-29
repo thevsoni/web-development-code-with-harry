@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling link And Buttons : Pseudo Selectors And More Designing</title>
+    <style>
+        .container{
+            border: 2px solid rgb(169, 115, 115);
+            background-color: rgba(92, 180, 180, 0.121);
+            padding: 30px;
+            margin: 50px auto;
+            width: 666px;
+        }
+        .btn{
+            background-color: crimson;
+
+            /*by default btton me border rahega */
+            /*so border ko none kr dunga jisse kisi me bhi border nahi rahega*/
+
+            border: none;
+
+            /*button me by default cursor nahi aata so*/
+            cursor: pointer;
+
+            font-size: 15px;
+
+            border-radius: 5px;
+        }
+        a{ 
+            /* to avoid hyperlink line ,we have to do something*/
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 2px;
+        }
+        a:hover{/* when we take our cursor here ,at that time, it works*/
+            color: aqua;
+            background-color: blue;
+            border: 3px solid blueviolet;
+        }
+        a:active{/* when we click ,at that time, it works*/
+            color: red;
+        }
+        a:visited{/*if atleast 1 times visited this then this properties overlap previous properties*/
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel numquam cupiditate rem aperiam quod saepe aliquid debitis facere error ab reprehenderit, sunt illum rerum neque harum molestiae illo omnis! Optio.</p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+        <a href="https://www.youtube.com/" target="_blank" class="btn">Go to youtube</a>
+    </div>
+</body>
+</html>
