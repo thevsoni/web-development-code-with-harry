@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: position </title>
+    <style>
+        .container{
+            border: 2px solid gray;
+            background-color: khaki;
+            height: 3000px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 4px;
+            display: inline-block;
+        }
+        #span1{
+            
+            margin: auto;
+            border: 2px solid red;
+            display: inline-block;
+            width: 100%;
+        }
+        #span2{
+            margin: auto;
+            border: 2px solid red;
+            display: block;
+            width: 20%;
+        }
+
+        #box3{
+            
+            /* top: 200px;
+            left: 200px; */
+            /*it doesnt happen anything */
+            /*bcs initially static position hai*/
+
+            /* position: relative;
+            top: 10px;
+            left: 10px; */
+
+            /*position:absolute*/
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+            /*position:fixed*/
+            /* position: fixed;
+            right: 90px; */
+
+            /*position:sticky*/
+            position: sticky;
+            top: 10px;
+        }
+
+        #box2{
+            position: sticky;
+            top: 30px;
+        }
+        /* .temp{
+            border: 2px solid black;
+        }
+        .temp div{
+            border: 2px solid red;
+        }
+        #div1{
+            float: left;
+        } */
+
+    </style>
+</head>
+<body>
+    <h2>CSS : Position</h2>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <!-- <div>hey div5</div>
+        <span id="span1">vishal</span>
+        <span id="span2">vishal</span> -->
+    </div>
+    <!-- <div class="temp">
+        <div id="div1">div1</div>
+        <div id="div2">div2</div>
+    </div> -->
+    
+</body>
+</html>
