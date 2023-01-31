@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            display: flex;
+
+            border: 2px solid black;
+            height: 400px;
+            /* flex-direction: column; */
+        }
+        .items{
+            height: 100px;
+            width: 100px;
+            color: rgb(10, 17, 1);
+            background-color: red;
+            margin: 5px;
+
+
+        }
+        #item-1{
+            align-self: flex-end;
+        }
+        #item-2{
+            
+        }
+        #item-3{
+            align-self: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">first</div>
+        <div class="items" id="item-2">second</div>
+        <div class="items" id="item-3">third</div>
+    </div>
+</body>
+</html>
