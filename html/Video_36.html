@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+
+        }
+        .box{
+            background-color: green;
+            width: 15px;
+            height: 150px;
+            position: relative;
+            /* animation-name: harry1; */
+            animation-name: harry2;
+            animation-duration: 9s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: alternate; */
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: ease; */
+            /* animation-timing-function: ease-out; */
+            /* animation-direction: reverse; */
+            animation-direction: alternate;
+
+            
+        }
+        @keyframes harry2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            /* %{
+                top: 250px;
+                left: 0px;
+            } */
+            /* 50%{
+                top: 250px;
+                left: 250px;
+            } */
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            10%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+        @keyframes harry1 {
+            from{
+                width: 250px;
+            }
+            to{
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box1
+        </div>
+    </div>
+</body>
+</html>

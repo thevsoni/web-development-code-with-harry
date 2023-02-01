@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /*to make photo in full size of screen*/
+            /* background: url('') no-repeat center center/cover; */
+        }
+        header{
+            border: 2px solid cyan;
+        }
+        section{
+            
+            border: 2px red solid;
+            height: 500px;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header::before{
+            border: 2px brown solid;
+            background: url('https://images.unsplash.com/photo-1674401770404-7d05485deb6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80') no-repeat center/cover; 
+            /* content: "voisjjbjv; lorem52kjbvilnv vrklreovkkkkkkkkkkkkkkkkkkkkkk"; */
+            /* content: "i am in header before"; */
+            content: "";
+            /* position: absolute; */
+            width: 50%; 
+            height: 50%;
+            /* z-index: -1; */
+        }
+        section::before{
+            content: "vishal soni is using section before pseudo selectors";
+        }
+        
+        section::after{
+            content: "vishal soni is using section before pseudo selectors";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        vishal soni
+    </header>
+    <section>
+        <li>vishl</li>
+        <li>soni</li>
+        <li>vishal</li>
+        <li>soni</li>
+    </section>
+</body>
+</html>
