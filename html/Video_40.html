@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            border: 2px solid red;
+            background-color: yellowgreen;
+            display: grid;
+            grid-template-columns: 150px 150px 100px;
+            grid-template-columns: 150px 150px auto;
+            grid-template-columns: 150px auto 100px;
+            /* overflow: hidden; */
+            grid-template-columns: auto auto 100px;
+            grid-template-columns: auto auto 150px;
+            grid-template-columns: auto auto 10%;
+
+            grid-template-columns: 4fr 4fr 0fr;
+            grid-template-columns: 0fr 0fr 0fr;
+
+            
+            /* we can easily see what happening behind this to avoid taking width */
+
+            grid-template-columns: repeat(6,auto);
+
+            grid-gap: 1.3rem;
+
+            
+        }
+        .item{
+            /* margin: 2rem; */
+            /* height: 100px; */
+            /* width: 100px; */
+            border: 2px solid red;
+            margin: 3px;
+            padding: 20px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- .item{This is Item-$}*9 it will give you below code -->
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>
