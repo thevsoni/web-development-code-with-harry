@@ -10,12 +10,33 @@
         display: grid;
         grid-template-rows: 1fr 1fr 4fr;
         grid-auto-rows: 2fr;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: repeat(5, 2fr);
+        /* grid-template-columns: 1fr;  it doesnt do anything and make sence also bcs it is taking 100% of its width*/
         grid-gap: 1rem;
     }
     .box{
         background-color: red;
         border: 2px solid black;
+    }
+     @media (max-width:1000px) {
+        .grid{
+            grid-template-columns: repeat(4,2fr);
+        }
+    }
+    @media (max-width:700px) {
+        .grid{
+            grid-template-columns: repeat(3,2fr);
+        }
+    }
+    @media (max-width:400px) {
+        .grid{
+            grid-template-columns: repeat(2,2fr);
+        }
+    } 
+    @media only screen and (max-width:200px) {
+        .grid{
+            grid-template-columns: 1fr;
+        }
     }
     </style>
 </head>
