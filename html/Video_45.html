@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2px;
+            /* padding: 2px; */
+        }
+        .border-set{
+            border: 2px solid red;
+            /* height: 10vh; */
+        }
+
+        .container{
+            display: grid;
+            /* height: 100vh; */
+            /* grid-gap: 2px; */
+
+            grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+        .footer{
+            /* height: 50px; */
+            align-self: flex-end;
+            grid-area: footer;
+        }
+        .section{
+            /* height: 50px; */
+            grid-area: section;
+        }
+        .aside{
+            /* height: 50px; */
+            grid-area: aside;
+        }
+        .navbar{
+            grid-area: navbar;
+
+        }
+        
+
+        @media screen and (max-width:500px) {
+            .container{
+                /* grid-template-columns: 1fr; */
+                /* grid-template-areas: none; */
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            .navbar span{
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container border-set">
+        <nav class="navbar border-set">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Services</span>
+            <span>Contact us</span>
+        </nav>
+        <section class="section border-set">
+            <h4>sectcion</h2>
+        </section>
+        <aside class="aside border-set">
+            <h4>aside</h2>
+
+        </aside>
+        <footer class="footer border-set">
+            <h4>footer &copy; Vishal soni</h2>
+        </footer>
+    </div>
+</body>
+</html>

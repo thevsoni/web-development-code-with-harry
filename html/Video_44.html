@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aqua;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'nav nav nav nav'
+            'section section section aside' ;
+
+        }
+
+        #item{
+            border: 2px solid black;
+            background-color: blueviolet;
+        }
+
+        nav{
+            background-color: pink;
+            border: 2px solid darkblue;
+            grid-area: nav;
+        }
+        section{
+            background-color: aquamarine;
+            border: 2px solid white;
+            grid-area: section;
+        }
+        aside{
+            background-color: rgb(109, 14, 61);
+            border: 2px solid rgb(26, 153, 122);
+            grid-area: aside;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h3>This is navBar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro, dolorem corporis, molestias facilis architecto modi, adipisci ipsa accusamus iusto eius? Placeat eaque inventore commodi sunt tempore tempora dignissimos! Magni.</p>
+        </nav>
+        <section>
+            <h3>This is section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro, dolorem corporis, molestias facilis architecto modi, adipisci ipsa accusamus iusto eius? Placeat eaque inventore commodi sunt tempore tempora dignissimos! Magni.</p>
+        </section>
+
+        <aside>
+            <h3>This is aside</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro, dolorem corporis, molestias facilis architecto modi, adipisci ipsa accusamus iusto eius? Placeat eaque inventore commodi sunt tempore tempora dignissimos! Magni.</p>
+
+        </aside>
+
+        <!-- <div id="item">item-1</div>
+        <div id="item">item-2</div>
+        <div id="item">item-3</div>
+        <div id="item">item-4</div>
+        <div id="item">item-5</div>
+        <div id="item">item-6</div>
+        <div id="item">item-7</div>
+        <div id="item">item-8</div>
+        <div id="item">item-9</div>
+        <div id="item">item-10</div> -->
+
+    </div>
+</body>
+</html>
