@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome</h1>
+
+    <script>
+        var str = "this is a string";
+        var pos = str.indexOf('is');
+        console.log(pos);//it gives first occurance of substring
+
+        pos = str.lastIndexOf('is');
+        console.log(pos);
+
+        pos = str.lastIndexOf('z');
+        console.log(pos);
+        
+        console.log(str.substr(0,5));
+
+        var replaced = str.replace("string","vishal");
+        var replaced = str.replace('string','vishal'); //we can use both quote here
+        console.log(replaced);
+        
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+
+        var newstr = str.concat(' with newstr');
+        var newstr = str.concat(" with newstr "); //we can use both quote here
+        console.log(newstr);
+        //we can use + operator here also in place of concat
+
+        var trimCheck = "               vishal is a good boy.               ";
+        console.log(trimCheck);
+        console.log(trimCheck.trim());
+
+        var char = str.charAt(2);
+        console.log(char);
+
+        char = str.charCodeAt(2);
+        console.log(char);
+
+        console.log(str[2]);
+        
+
+        </script>
+</body>
+</html>

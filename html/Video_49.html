@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>we are using string in js</h1>
+    <div id="content"> this is id </div>
+    <script>
+
+        document.getElementById("content").innerHTML = "<h1> this is h3 heading </h1>";
+        document.getElementById('content').innerHTML = "<h1> this is h3 new heading </h1>";
+
+        
+        var str = "vishal";
+        var str2 = 'vishal';
+        var str3 = "vishal's home";//to print single cot
+        var str4 = ' "this is vishal soni" ';//to print double cot
+        console.log(str);
+        console.log(str2);
+        console.log(str3);
+        console.log(str4);
+
+        var a = "vishal ";
+        var b = "soni";
+        console.log(a+b);
+        console.log(a+" is playing with "+b);
+
+        var temp = `vishal is a good boy `;
+        console.log(temp);
+
+        var ans = `${a} is going to be a india's brand ,his "surname" is ${b}`;
+        console.log(ans);
+
+        var lengthOfAns = ans.length;
+        console.log(lengthOfAns);
+
+        console.log("using back slash here \n got it");
+        console.log("we can print back slash using \\");
+
+        var strnew = new String();
+        console.log(strnew);
+
+        var strnew2 = new String("vishal soni");
+        console.log(strnew2);
+
+    </script>
+</body>
+</html>
