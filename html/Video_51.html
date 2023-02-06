@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        welcome !
+    </h1>
+    
+
+    <script>
+        var a = 5;
+        console.log(a);
+
+        var a = 6;
+        console.log(a);
+
+        //we can declare same variable name many times in var but not in case of let so 
+        //we should use let
+        /*
+        let b = 2;
+        console.log(b);
+
+        let b = 3;
+        console.log(b);
+        */
+
+        var a = 8;
+        {
+            console.log(a);
+        }
+
+        let e = 9;
+        console.log(e);
+        
+        {
+            console.log(a); // i can use var here bcs var works as global variable 
+            // console.log(e);  //but here i can't use e bcs inside this block i have not defined e in case of let i have to declare 
+            //e here bcs this is different block 
+
+            let e = 10;
+            console.log(e);
+        }
+
+        const aa = 100;
+        console.log(aa);
+        {
+            console.log(aa);
+        }
+
+        {
+            const aa = 21;
+            console.log(aa);
+        }
+
+        
+    //    if else and switch same as java 
+
+
+    </script>
+</body>
+</html>

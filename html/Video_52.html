@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome</h1>
+
+    <script>
+
+        // primitive
+        let myVar = 1;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        
+        //arrays
+        let names = [1,2,"harry",true,null,undefined];
+        console.log(names);
+        
+        console.log(names[1]);
+        console.log(names[3]);
+        
+        console.log(names.length);
+
+        let names2 = new Array(5,1,2,"harry",true,null,undefined,"vishal");
+        console.log(names2);
+        
+        names2 = names2.sort();
+        console.log(names2);
+
+        names2.push("soni");
+        console.log(names2);
+        
+        
+        // objects
+        let employee = {
+            name : "harry",
+            salary : 1000,
+            channel1 : "cwh",
+            "channel 2" : "pwh",
+        }
+
+        console.log(employee);
+        console.log(employee.channel1);
+        console.log(employee['channel 2']);
+
+
+        
+        
+
+    </script>
+</body>
+</html>
