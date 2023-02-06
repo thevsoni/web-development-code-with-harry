@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>video 56 : js navigating the DOM</h1>
+    
+    <div class="container">
+        <ul>
+            <li>li 1st in container 2</li>
+            <li>li 2nd in container 2</li>
+            <li>li 3rd in container 2</li>
+        </ul>
+        <p>i am 1st p in 2nd container</p>
+        <p>i am 2nd p in 2nd container</p>
+        <p>i am 3rd p in 2nd container</p>
+        <p>i am 4th p in 2nd container</p>
+    </div>
+    <div id="main" class="container">
+        <p>i am first container</p>
+        <ul id="nav">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>contact Us</li>
+            <li>Carrer</li>
+        </ul>
+    </div>
+
+</body>
+
+<script>
+    
+    let a = 5;
+    console.log("this is a = ", a);
+    console.log("this is a = "+ a);
+
+    let employee = {
+        name:"vishal",
+        age:23,
+    };
+    console.log(employee);
+    console.log("this is employee = " + employee);
+    console.log("this is employee = " , employee);
+    
+    
+
+    //get html by id
+    let main = document.getElementById('main');
+    console.log(main); //-> it will give everything inside main id
+    
+    //main.innerHTML // -> it will print everything inside main id
+    //nav.innerHTML //-> it will print everything inside nav id
+    //nav.innerHTML = <li>vishal soni website</li> //-> it will change all html inside nav to new html
+
+
+    //get html by class
+    let containers = document.getElementsByClassName('container');
+    console.log("this is containers = "+containers);
+    console.log("this is containers = ",containers);
+
+    //we can access html by using css selectors
+
+    let sel = document.querySelector('.container'); //it will give first times used container element 
+    console.log("this is getting using selector = ",sel);
+
+    sel = document.querySelector('#nav');
+    console.log("here i am going to get using selector nav id ",sel);
+
+    sel = document.querySelector('p');
+    console.log(sel);
+    
+    sel = document.querySelector('ul');
+    console.log(sel);
+
+    sel = document.querySelector('li');
+    console.log(sel);
+    
+    sel = document.querySelector('li:nth-child(3)');
+    console.log("here it will be 3rd list of first 3rd li overall",sel);
+    
+    
+    sel = document.querySelector('li:nth-child(3)');
+    console.log("here it will be 3rd list ",sel);
+    
+    sel = document.querySelector('#main li:nth-child(3)');
+    console.log("here it will be 3rd list of first 3rd li in main id",sel);
+    
+    
+    //to get all elements using query selector
+
+    sel = document.querySelectorAll('li');
+    console.log(sel);
+    
+    
+
+
+</script>
+</html>

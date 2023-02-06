@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>video 54 : JS interaction using alert prompt confirm</h1>
+</body>
+    <script>
+
+        //alert : - alert your for something ,
+        console.log("vishal soni");
+        alert("this is a message you are in danger ,do u really want ot go further ! after click on this you can go else big no");
+
+
+        //prompt : - to ask something from user
+        let name = prompt("what is your name ? ", "Guest");
+        console.log(name);
+        console.log("welcome here ,u r hacked now bcs u have checked all our conditions");
+
+        prompt("what is your age ?"); //this doesnt make sence bcs we use this to take input something from user so
+        let age = prompt("what is your age ?");
+        //then i can do something with this age
+
+        //confirm : - to reconfirmation something from user 
+        let check = confirm("do you reallywant to delete your message ?");
+        console.log(check);
+        
+        if(check){
+            console.log("you have deleted your msg successfully");
+        }
+        else{
+            console.log("alright ! your msg has been not deleted");
+        }
+        
+    </script>
+</html>

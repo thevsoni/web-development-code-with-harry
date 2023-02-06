@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js : video 55 , about js loops</h1>
+</body>
+<script>
+    for(let a=0; a<5; a++){
+        console.log(a);
+    }
+
+    let arr = [1,"vishal",2,"soni"];
+    for(let i=0; i<arr.length; i++){
+        console.log(arr[i]);
+    }
+    
+    //in java
+    /*
+     for(let i : arr){
+            sout(i);
+     }
+    */
+
+    //in javascript
+    arr.forEach(function f(element){
+        console.log(element+" modern");
+    });
+
+    for(element of arr){
+        console.log(element+" modern again");
+    }
+
+    //traverse in objects
+    let employee = {
+        name : "vishal",
+        surname : "soni",
+        age : 23,
+    }
+
+    console.log(employee.name);
+    console.log(employee.surname);
+    console.log(employee.age);
+    
+
+    // console.log(employee[name]);
+    // console.log(employee[surname]);
+    // console.log(employee[age]);
+    //it will give error here 
+
+    console.log(employee['name']);
+    console.log(employee['surname']);
+    console.log(employee['age']);
+    
+    console.log(employee["name"]);
+    console.log(employee["surname"]);
+    console.log(employee["age"]);
+    
+    
+    console.log(employee[`name`]);
+    console.log(employee[`surname`]);
+    console.log(employee[`age`]);
+
+    console.log("traverse in employee object");
+    
+    for(key in employee){
+        //console.log(key+" "+employee.key); // it is giving undefined value bcs employee.key me what is key, programme doesnot know
+        console.log(key+" "+employee[key]);
+    }
+
+    console.log("using top left sign");
+    
+    for(key in employee){
+        console.log(`${key} of employee is ${employee[key]}`);
+    }
+    
+    
+    //while loop
+    console.log("while loop");
+    
+    let i =0;
+    while(i<4){
+        console.log(i+" is less than 4");
+        console.log(`${i} is less than 4`);
+        
+        i++;
+    }
+    
+    
+    console.log("do while loop");
+    //do while loop
+    i =0;
+    do{
+        console.log("hi bro this is "+i);
+        i++;
+    }while(i<5);
+
+</script>
+</html>

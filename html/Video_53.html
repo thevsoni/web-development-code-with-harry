@@ -16,6 +16,27 @@
     // console.log(a);
     // console.log(a**a);
     // console.log("vishal");
+
+    function isOk(name , surname){
+        if(name.length > surname.length){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    let check = isOk("vishal" , "soni");
+    console.log(check);
+
+    check = isOk("soni" , "vishal");
+    console.log(check);
+
+    let name23 = "vishal";
+    let name22 = "soni";
+
+    check = isOk(name22 , name23);
+    console.log(check);
     
 </script>
     <script src="../js/Video_53.js"></script>
