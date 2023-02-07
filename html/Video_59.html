@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(90, 169, 169);
+            border: 2px solid black;
+            text-align: center;
+        }
+        #time{
+            color: black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>video 59 : js : dates and times </h1>
+    <div class="container">
+        The current time is <span id="time"></span>
+    </div>
+</body>
+<script>
+    console.log("dates and time in js");
+    
+    let dt = new Date();
+    console.log(dt);
+    
+    let dt2 = new Date(50000);  //it will give date time based on 1 jan. 1970 05:30 + (an arguement we are passing here)
+    console.log(dt2);
+
+    let dt3 = new Date("2023-02-08");
+    console.log(dt3);
+    
+    // let dt4 = new Date(year,month,date,hours,minutes,seconds,milliseconds); //in this formate also we can write
+    let d4 = new Date(2030 , 2, 7 , 6 , 27 , 27 , 27); //0th index month consider here
+    let d5 = new Date(2030,1,7,6,27,27,27);
+    console.log(d4);
+    console.log(d5);
+    
+
+    let dateAndTime = new Date();
+    console.log(dateAndTime.getFullYear());
+    console.log(dateAndTime.getMonth());
+    console.log(dateAndTime.getDate());
+    console.log("hours in india "+dateAndTime.getHours());
+    console.log(dateAndTime.getMinutes());
+    console.log(dateAndTime.getSeconds());
+    console.log(dateAndTime.getMilliseconds());
+    console.log("hours in utc "+dateAndTime.getUTCHours());
+
+
+    //we can change anything from dateAndTime
+    dateAndTime.setUTCHours(6);
+    console.log(dateAndTime.getUTCHours());
+    dateAndTime.setHours(6);
+    dateAndTime.setDate(6);
+    dateAndTime.setSeconds(6);
+    dateAndTime.setMilliseconds(6);
+    dateAndTime.setMinutes(6);
+    dateAndTime.setMonth(6);
+    dateAndTime.setFullYear(6);
+    console.log(dateAndTime);
+    
+    //my clock
+    function getTime(){
+        document.getElementById('time').innerHTML = new Date();
+    }
+
+    setInterval(getTime , 1000);
+
+    
+    
+
+</script>
+</html>
