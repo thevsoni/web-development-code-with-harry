@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 2px solid black;
+            border-radius: 2px;
+            background-color: khaki;
+        }
+        .container{
+            border: 2px solid rgb(177, 159, 159);
+            border-radius: 2px;
+            background-color: rgb(157, 52, 158);
+            
+        }
+        #btn{
+            border: 2px solid rgb(207, 168, 24);
+            border-radius: 2px;
+            background-color: rgb(43, 148, 89);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video 57 : js : events and listening to events</h1>
+        <p id="parag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi officia quae amet? Ratione sequi reiciendis accusamus ipsam velit sit dolores repellat excepturi itaque asperiores aliquam illum incidunt aut debitis, vero eos quas dolorum ab quam cumque voluptatibus fugit et amet. Atque perferendis numquam reprehenderit fuga eos. Eveniet quidem deleniti magni.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show / hide</button>
+    <!-- here i want that after clicking on button , my content will be hide  -->
+    <!-- for this i have to create a function inside script and i can do whatever i want with this -->
+
+</body>
+<script>
+
+    //event
+    function toggleHide(){
+        // let parag = document.querySelector('parag');
+        if(parag.style.display != 'none'){
+            parag.style.display = 'none';
+        }
+        else{
+            parag.style.display = "block";
+        }
+    }
+
+
+
+    //event listener
+    let para = document.getElementById('parag');
+   
+    parag.addEventListener('mouseover' , function run2(){
+        alert('u r inside paragraph');
+        console.log('mouse inside');
+        
+    });
+
+    parag.addEventListener('mouseout' , function run2(){
+        alert('u r outside paragraph');
+        console.log('mouse outside');
+    });
+
+    let arr = [1,2,3,4];
+    arr.forEach(function func(i){
+        console.log(i);
+    });
+
+    
+</script>
+</html>

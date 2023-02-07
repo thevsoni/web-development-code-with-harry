@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    video : 58 : js : set interval and set time out
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+</body>
+<script>
+
+    //set time out
+
+    console.log("hello");
+    
+    function greet(name="vishal"){
+        console.log("browwww "+name);
+    }
+    setTimeout(greet , 2000); // here i have to write only greet not greet() bcs greet() means calling a function but i dont need to call 
+                              // a function , i just need to give the name of function to set something like time that sit
+    // setTimeout(greet() , 5000); it is wrong syntax
+
+    //using this settimeout , i will get my things inside function after given time here after 5k ms means 5 second
+    greet("soni"); // it doesnt take 5 seconds here it will print directly
+    setTimeout(greet , 2000);
+
+
+    setTimeout(greet,3000,"soni");
+
+    function greet2(name ,age){
+        console.log("your name is "+name+" and age is = "+age);
+    }
+    let timeout = setTimeout(greet2 , 5000 , "vishal" , 23);
+
+
+    a= 5;
+    console.log(a);
+
+    a=7;
+    console.log(a);
+
+    //setTimeout return a id which we can use this to clear that function whenever we need
+
+    clearTimeout(timeout);
+
+
+    //set interval
+    function greetOfSetInterval(name,surname){
+        console.log("hello "+name+" "+surname);
+    }
+    intervalId = setInterval(greetOfSetInterval,2000,"vishal","soni");
+
+    
+    setTimeout(endInterval , 10000);
+
+    function endInterval(){
+        clearInterval(intervalId);
+    }
+
+
+
+    //
+    function displayTime(){
+        time = new Date();
+        console.log(time);
+        
+    }
+    displayTime();
+
+
+    
+
+</script>
+</html>
