@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>video 61 : JS : Math Object</h1>
+</body>
+<script>
+    console.log(Math);
+    
+    //constants from math object
+    console.log("constants from math object");
+    console.log(Math.E);
+    console.log(Math.PI);
+
+    //functions from math object
+    let a = 34.19;
+    let b = 34.98;
+    console.log(Math.round(a));
+    console.log(Math.round(b));
+    
+    console.log(Math.pow(2,5));
+    console.log(2**5);
+    console.log(Math.sqrt(36));
+
+    console.log(Math.floor(3.9));
+    console.log(Math.ceil(3.1));
+
+    console.log(Math.abs(-10));
+    console.log(Math.abs(10));
+
+    //trigonometric function
+    console.log(Math.sin(10)); // tihs is a value in radian not in degree
+
+    //min and max value
+    console.log(Math.min(12,13,14,6,18));
+    console.log(Math.max(12,13,14,6,18));
+
+    //random values
+    console.log("random values");
+    console.log(Math.random()); //it gives values between 0 and 1
+    //to get random value between a and b
+    a = 10;
+    b = 20;
+    console.log("random values between 10 and 20");
+    console.log(a + Math.random()*(b-a));
+
+    //printing random firstly b/w 0 and 1 then converting b/w 10 and 20
+    let rand = Math.random();
+    console.log(rand);
+    a = 10;
+    b = 20;
+    console.log(a+rand*(b-a));
+    
+    
+        
+    
+    
+    
+</script>
+</html>

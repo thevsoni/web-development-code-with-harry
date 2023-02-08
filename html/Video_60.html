@@ -133,15 +133,33 @@
         speak(){
             console.log(this.greetings);
             
-            let greeting = "good evening";
+            // let greeting = "good evening";
             this.names.forEach(function run(student){
-                // console.log(greetings+" "+student);//it gives error 
-                //console.log(greeting+" "+student); //it gives good evening bcs there is this things inside this speak bloack
+                //  console.log(greetings+" "+student);//it gives error 
+                // console.log(greeting+" "+student); //it gives good evening bcs there is this things inside this speak bloack
                 //console.log(this.greeting+" "+student); //this points ,this employee things ,since there is no greeting in employee 
                                                         //since there is greeting inside speack() but after using this it consider 
                                                         //about the class
-               // console.log(this.greetings+" "+student); //here it gives good morning bcs there is available in employee
+               console.log(this.greetings+" "+student); //here it gives undefined bcs from this function this cant access outside ,to solve this ,to access in parent 
+                                                        //we need arrow function
             });
+
+            this.names.forEach(run = (student) =>{
+                console.log(this.greetings+" "+student);
+            });
+
+            this.names.forEach((student) =>{
+                console.log(this.greetings+" "+student);
+            });
+
+            this.names.forEach((student) =>
+                console.log(this.greetings+" "+student),
+            );
+            
+            console.log("normal for loop");
+            for(let i=0; i<this.names.length; i++){
+                console.log(this.greetings+" "+this.names[i]);
+            }
         }
     }
     employye.speak();
