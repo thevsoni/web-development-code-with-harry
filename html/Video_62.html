@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>Video 62 : js : JSON</h1>
+    <h3>we use this to transport our objects  .to do this , we need to convert our objects into a string then i can transport this 
+        and again i can convert my this string into object
+    </h3>
+</body>
+<script>
+    let beforeObj = {
+        name : "vishal soni",
+        age : 23,
+        designatiion : "BPM",
+        studying : "coding",
+        "want to be" : "BusinessMan",
+    }
+
+    console.log(beforeObj);
+    
+    let beforeObj_str = JSON.stringify(beforeObj);
+    
+    console.log(beforeObj_str);
+
+    //now i have my object in form of string ,i can do each and every operation of string here also
+    //for example
+    beforeObj_str = beforeObj_str.replace('BusinessMan','Politician');
+    beforeObj_str = beforeObj_str.replace('BPM','BusinessMan');
+
+    console.log(beforeObj_str);
+
+    //now converting this string into a objects but it should be convertable string into a object
+
+    let afterObj = JSON.parse(beforeObj_str);
+
+    console.log(afterObj);
+    
+    
+    
+    
+
+</script>
+</html>
