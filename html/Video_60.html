@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #btn{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>video : 60 , js : Arrows functions</h1> 
+    we use this arraow function to write short form of function
+
+    <h4 id="h4">i am depend on button</h4>
+    <button id="btn" onclick="clicked()">click me bro</button>
+</body>
+<script>
+
+
+    
+
+    function greet(){
+        console.log("good morning");
+        
+    }    
+    greet = ()=>{
+        console.log("good evening");
+    }
+    greet2 = ()=>
+        console.log("good afternoon");
+    
+    let greet3 = ()=>{  //we can use let here
+        console.log("good evening");
+    }
+
+    //so we can write both syntax for function
+    greet();
+    greet2();
+    greet3();
+
+    //above function dont have return data type , we can create a arraows function for return data type also
+
+    sum = () => { //without parameter
+        return 10;
+    }
+    sum2 = (a,b) => { //with parameter
+        return a+b;
+    }
+    sum3 = (a,b) => a+b; //even we do not need to write return in arrows function
+
+    halfTheNumber = a => a/2; //we dont need brackets also in case only 1 parameter is there 
+
+
+
+    //as well in case for setTimeout
+    //normally we write a function like f
+    //then setTimeout(f,3000);
+
+    //we can write this in arrow function
+    setTimeout(() => {
+        //i can directly define my function here
+        console.log("i am inside arrow function of setTimeout");
+    }, 3000);
+
+
+    
+    //for loop
+    //normally we do for "for each loop"
+    console.log("normally we do for for each loop");
+
+    let arr = [1,2,3,4,5,6];
+    arr.forEach(function run(element){
+        console.log(element);
+    });
+    //we can use arrow function here
+    console.log("we can use arrow function here");
+    arr.forEach(run=(element)=>{
+        console.log(element);
+        
+    });
+    //more short form
+    console.log("more short form");
+    arr.forEach((element) => {
+        console.log(element);
+        
+    });
+    //since we r taking only one arguement here so dont need brackets here
+    console.log("since we r taking only one arguement here so dont need brackets here");
+    arr.forEach(element => {
+        console.log(element);
+        
+    });
+    //even we do not need curly brackets as we know
+    console.log("even we do not need curly brackets as we know");
+    arr.forEach(element =>console.log(element));
+     
+
+     //in events function
+     console.log("in events function");
+     
+    h4.addEventListener('mouseover', function f(){
+        alert("hey !");
+    });
+    btn.addEventListener('mouseover',f2 = () => {
+        alert("hello button !");
+    });
+
+    h4.addEventListener('mouseout', ()=>{
+        alert("bye !");
+    });
+    h4.addEventListener('mouseout', ()=>
+        alert("bye !")
+    );
+    h4.addEventListener('mouseout', ()=>
+        alert("bye !"),
+        console.log("vishal soni"),
+        alert("bye !")
+    );
+
+
+    //in objects
+    console.log("in objects");
+    let employye = {
+        a : 5,
+        greetings : "good morning",
+        names : ["vishal", "harry"],
+
+        speak(){
+            console.log(this.greetings);
+            
+            let greeting = "good evening";
+            this.names.forEach(function run(student){
+                // console.log(greetings+" "+student);//it gives error 
+                //console.log(greeting+" "+student); //it gives good evening bcs there is this things inside this speak bloack
+                //console.log(this.greeting+" "+student); //this points ,this employee things ,since there is no greeting in employee 
+                                                        //since there is greeting inside speack() but after using this it consider 
+                                                        //about the class
+               // console.log(this.greetings+" "+student); //here it gives good morning bcs there is available in employee
+            });
+        }
+    }
+    employye.speak();
+
+</script>
+</html>
