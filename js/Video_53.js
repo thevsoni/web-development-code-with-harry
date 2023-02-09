@@ -10,7 +10,7 @@ function greet(name1,nam2){
 
 function defaultFunction(a,b=5){
     console.log(a+b);
-    
+
 }
 
 function sum(a,b,c){
