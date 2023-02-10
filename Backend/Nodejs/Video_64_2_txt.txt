@@ -1,0 +1,2 @@
+i am checking node js read and write module here
+i am browser
